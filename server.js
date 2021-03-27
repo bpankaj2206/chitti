@@ -65,7 +65,7 @@ io.on('connection',socket=>{
     
 });
 
-const PORT=3000|| process.env.PORT;// 3000 is fixed value but if we have this variable process.env.PORT then it will assign that value to PORT
+const PORT= process.env.PORT || 3000 ; // 3000 is fixed value but if we have this variable process.env.PORT then it will assign that value to PORT
 
 server.listen(PORT,()=>console.log(`serevr running at port ${PORT}`));
 
